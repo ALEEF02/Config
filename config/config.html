@@ -18,7 +18,18 @@
 		</div>
     </div>
   </div>
-
+<div class="item-container">
+  <div class="item-container-header">Platform</div>
+  <div class="item-container-content">
+    <label class="item">
+      Pebble Time Round View
+      <input type="checkbox" class="item-toggle" name="toggle-1" id='rview'>
+    </label>
+  </div>
+  <div class="item-container-footer">
+   If the view is too clutered, or you are using a Pebble Time Round turn this on
+  </div>
+</div>
   <div class='item-container'>
     <div class='item-container-header'>Classes</div>
     <div class='item-container-content'>
@@ -67,7 +78,8 @@
   period3: null,
   period4: null,
   period5: null,
-  period6: null
+  period6: null,
+  view: null
 }
 	periods.period1 = $('#p1').val();
 	periods.period2 = $('#p2').val();
@@ -75,6 +87,7 @@
 	periods.period4 = $('#p4').val();
 	periods.period5 = $('#p5').val();
 	periods.period6 = $('#p6').val();
+	periods.view = $('#rview').val();
 	
 	console.log(JSON.stringify(periods));
 	return periods;
